@@ -10,7 +10,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => (
         className={btnClasses.join(" ")}
         key={option}
         type="button"
-        onClick={onLeaveFeedback(option)}
+        onClick={() => onLeaveFeedback(option)}
       >
         <span className={styles.btnText}>{option}</span>
       </button>
